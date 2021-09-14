@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./images/684.jpg);
+  font-family: "Titillium Web", sans-serif;
+  color: aliceblue;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  background: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)),
+    url(./images/background.jpg);
+  margin: 5%;
+  padding: 5%;
+}
+
+h1 {
+  /* display: flex;
+            justify-content: center; */
+  font-size: 55px;
+  color: black;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: blueviolet;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+
+.logo-img {
+  width: 100px;
+}
