@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./signin.css" />
-    <link rel="stylesheet" href="./login.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,12 +28,11 @@
       <h2>Welcome back</h2>
     </div>
 
-    <section id="login-form">
-      <div class="signin">
+    <section id="logging-in">
+      <div class="login">
         <form
           class="login-form"
-          action="https://obscure-savannah-64918.herokuapp.com/"
-          method="POST"
+          onsubmit="event.preventDefault()"
           id="signup-form"
         >
           <div class="signup-username">
@@ -43,7 +41,7 @@
               type="text"
               name="username"
               id="username"
-              class="signup-input"
+              class="login-username"
               placeholder="Username"
               required
             />
@@ -55,20 +53,24 @@
               type="password"
               name="password"
               id="password"
-              class="signup-input"
+              class="login-password"
               placeholder="Password"
               required
             />
             <p class="login-link">
               Don't have an account?
-              <a href="./homepage.html"><b>Sign Up</b></a>
+              <a href="./register.html"><b>Sign Up</b></a>
             </p>
           </div>
           <div>
             <button type="submit" class="signup-btn">Login</button>
+            <button type="button" class="return-btn">
+              <a href="./index.html">Return to Homepage</a>
+            </button>
           </div>
         </form>
       </div>
     </section>
+    <script src="./authentication.js"></script>
   </body>
 </html>

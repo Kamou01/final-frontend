@@ -19,13 +19,13 @@ body {
   padding: 5%;
 }
 
-.login {
+.register {
   display: flex;
   justify-content: center;
   margin-top: 300px;
 }
 
-.login-form {
+.register-form {
   width: 320px;
   height: 350px;
   background: rgba(255, 255, 255, 0.1);
@@ -64,6 +64,13 @@ h2 {
 }
 
 .signup-btn {
+  margin: 5%;
+  padding: 5%;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.return-btn {
   margin: 5%;
   padding: 5%;
   border-radius: 10px;

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./addcomics.css">
-    <link rel="stylesheet" href="./addcomic.js">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,8 +36,7 @@
         <div class="add">
             <form
               class="adding-form"
-              action=""
-              method="POST"
+              onsubmit="event.preventDefault(); addProduct()"
               id="adding-form"
             >
               <div class="add-name">
@@ -47,7 +45,7 @@
                   type="text"
                   name="name"
                   id="name"
-                  class="add-input"
+                  class="add-name"
                   placeholder="Name"
                   required
                 />
@@ -59,7 +57,7 @@
                   type="text"
                   name="description"
                   id="description"
-                  class="add-input"
+                  class="add-description"
                   placeholder="Description"
                   required
                 />
@@ -71,7 +69,7 @@
                   type="text"
                   name="price"
                   id="price"
-                  class="add-input"
+                  class="add-price"
                   placeholder="Price"
                   required
                 />
@@ -83,7 +81,7 @@
                   type="text"
                   name="category"
                   id="category"
-                  class="add-input"
+                  class="add-category"
                   placeholder="Category"
                   required
                 />
@@ -95,7 +93,7 @@
                   type="text"
                   name="image"
                   id="image"
-                  class="add-input"
+                  class="add-image"
                   placeholder="Url link for the Image"
                   required
                 />
@@ -103,9 +101,10 @@
               </div>
               <div>
                 <button type="submit" class="add-btn">Add Comic <i class="fas fa-arrow-alt-circle-up"></i></button>
+                <button type="submit" class="return-btn"><a href="./index.html">Return to Homepage</a></button>
               </div>
             </form>
           </div>
-    
+    <script src="./addcomic.js"></script>
 </body>
 </html>

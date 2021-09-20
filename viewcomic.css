@@ -19,11 +19,31 @@ body {
   padding: 5%;
 }
 
+.display-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+
 h1 {
   /* display: flex;
         justify-content: center; */
   font-size: 55px;
   color: black;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+h3 {
   font-family: "Teko", sans-serif;
   text-align: center;
 }
@@ -46,6 +66,20 @@ h2 {
   padding: 2%;
   border-radius: 10px;
   background-color: blueviolet;
+  text-align: center;
+}
+
+.dlt-btn {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.acc-btns {
+  margin: 5%;
+  padding: 5%;
 }
 
 .logging-in {
@@ -63,33 +97,33 @@ h2 {
 
 .row1 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 
 .row2 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 .row3 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 .row4 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 .row5 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 .row6 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 
 .row7 {
   display: flex;
-  margin: 50px;
+  margin: 100px;
 }
 
 header {

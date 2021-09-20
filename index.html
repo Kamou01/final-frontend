@@ -9,6 +9,11 @@
       src="https://kit.fontawesome.com/cce18f0ce0.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/97-979421_superman-3222965-960-720-superman-silhouette-png-removebg-preview.png"
+      type="image/png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,10 +40,11 @@
         />
       </div>
       <div class="acc_btns">
-        <button class="logging-in"><a href="./signin.html"></a> Login</button>
+        <button class="logging-in"><a href="./signin.html">Login</a></button>
         <button class="signing-up">
-          <a href="./homepage.html"></a> Sign Up
+          <a href="./register.html">Sign Up</a>
         </button>
+        <button><a href="./addproducts.html">Add Comics</a></button>
       </div>
       <button class="nav-toggle" aria-label="toggle-navigation">
         <span class="hambuger"></span><i class="fas fa-bars"></i>
@@ -69,192 +75,17 @@
         </h2>
       </div>
     </section>
+    <section class="search-bar">
+      <form onsubmit="event.preventDefault(); searchFilter()">
+        <input type="text" id="search" />
+        <button type="submit">Search</button>
+      </form>
+    </section>
 
     <section id="products">
-      <div class="row1">
-        <div class="comic-books">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row2">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row3">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row4">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row5">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row6">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="row7">
-        <div class="comic-book">
-          <img
-            src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
-            alt="pic"
-          />
-          <h1>name</h1>
-          <h3>category</h3>
-          <p>description</p>
-          <h5>price</h5>
-          <button class="addto-cart">
-            Add to Cart <i class="fas fa-cart-plus"></i>
-          </button>
-        </div>
-      </div>
+      <h1>Products</h1>
+      <!-- <div class="comics-container"></div> -->
+      <section id="comic-container"></section>
     </section>
 
     <section id="about">

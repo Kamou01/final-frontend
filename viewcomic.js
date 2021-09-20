@@ -1,16 +1,21 @@
-function view_comics() {
-    fetch("https://final-eotp.herokuapp.com/view_comics/")
+let comics = []
+
+// FUNCTION TO FETCH COMIC DATA FROM DATABASE
+function fetch_comics() {
+    fetch("https://final-app3.herokuapp.com/view_comics/")
     .then(response => response.json())
     .then(data => {
-        let comics = data.products;
-        let container = document.querySelector(".row1");
+      console.log(data)
+        comics = data.comics;
 
+
+        let container = document.querySelector("#comic-container");
         comics.forEach(comic => {
             container.innerHTML += renderBook(comic)
         });
     })
 }
-view_comics()
+fetch_comics()
 
 function renderBook(book) {
     return `       <div class="comic-books">
@@ -18,21 +23,38 @@ function renderBook(book) {
       src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
       alt="pic"
     />
-    <h1>name</h1>
-    <h3>category</h3>
-    <p>description</p>
-    <h5>price</h5>
+    <h1>${book.name}</h1>
+    <h2>${book.category}</h2>
+    <h3>${book.description}</h3>
+    <h3>${book.price}</h3>
     <button class="addto-cart">
       Add to Cart <i class="fas fa-cart-plus"></i>
     </button>
+    <button class"dlt-btn" onclick="deleteProduct(${book.id})">delete</button>
   </div>`
 }
 
-
-function view_comic() {
-    fetch("https://final-eotp.herokuapp.com/view_comic/")
-    .then(response => response.json())
-    .then(data => console.log(data))
+function searchFilter(){
+  let searchTerm = document.querySelector("#search").value
+  console.log(searchTerm)
+  let foundComics = comics.filter(book => {
+    return book.name.toLowerCase().includes(searchTerm.toLowerCase())
+  })
+  console.log(foundComics)
+  let container = document.querySelector("#comic-container");
+  container.innerHTML = ''
+  foundComics.forEach(comic => {
+            container.innerHTML += renderBook(comic)
+        });
 }
 
+function deleteProduct(id) {
+  fetch(`https://final-app3.herokuapp.com/delete_comics/${id}/`)
+      .then(response => response.json())
+      .then(data => {
+          console.log(data);
+          location.reload()
+      })
 
+
+}
