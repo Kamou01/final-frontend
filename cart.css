@@ -38,3 +38,24 @@ h2 {
 .logo-img {
   width: 100px;
 }
+
+.return-btn {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.clear-btn {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+p {
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}

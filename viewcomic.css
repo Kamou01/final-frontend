@@ -22,7 +22,9 @@ body {
 .display-img {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  width: 79%;
 }
 
 p {
@@ -69,6 +71,14 @@ h2 {
   text-align: center;
 }
 
+.adding-btn {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
 .dlt-btn {
   margin: 2%;
   padding: 2%;
@@ -77,9 +87,34 @@ h2 {
   text-align: center;
 }
 
-.acc-btns {
-  margin: 5%;
-  padding: 5%;
+.btn-primary {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.heading-name {
+  color: black;
+}
+.cat-col {
+  color: aqua;
+}
+
+.acc_btns {
+  display: flex;
+  width: 60%;
+  height: 10%;
+  margin: 2%;
+}
+
+.cart-btn {
+  margin: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: blueviolet;
+  text-align: center;
 }
 
 .logging-in {
@@ -336,4 +371,16 @@ label {
 
 .social-list__link {
   padding: 5em;
+}
+
+.comic-books {
+  text-align: center;
+}
+
+#comic-container {
+  border: black;
+  display: flex;
+  flex-wrap: wrap;
+  border-block: inherit;
+  margin: 4%;
 }
