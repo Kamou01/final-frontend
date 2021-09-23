@@ -6,17 +6,15 @@ let container = document.querySelector("#cart-items");
         })
 
 function renderCart(cart) {
-    return `       <div class="comic-books">
-    <img
-      src="${cart.image}"
-      alt="pic"
-    />
-    <h1>${cart.name}</h1>
-    <h2>${cart.category}</h2>
-    <h3>${cart.description}</h3>
-    <h3>${cart.price}</h3>
-    <button type="button" class="remove-item" onclick="removeFromCart(${cart.id})">Remove Item</button>
-    </div>`
+    return `       <div class="comic-books" style="width: 18rem;">
+  <img src="${cart.img}" class="display-img" alt="comicbook image">
+  <div class="card-body">
+   <h2 class="heading-name">${cart.name}</h2>
+      <h3 class="cat-col">${cart.category}</h3>
+      <h3 class="card-text">${cart.description}</h3>
+      <h4>${cart.price}</h4>
+  </div>
+</div>
 }
 
 console.log(cart)
