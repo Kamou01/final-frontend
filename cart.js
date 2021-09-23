@@ -10,7 +10,7 @@ function renderCart(cart) {
   <img src="${cart.image}" class="display-img" alt="comicbook image">
   <div class="card-body">
    <h2 class="heading-name">${cart.name}</h2>
-      <h3 class="cat-col">${cart.category}</h3>
+      <h3 class="cat-col" style="color: aqua;">${cart.category}</h3>
       <h3 class="card-text">${cart.description}</h3>
       <h4>${cart.price}</h4>
    </div>
