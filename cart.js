@@ -7,7 +7,7 @@ let container = document.querySelector("#cart-items");
 
 function renderCart(cart) {
     return `       <div class="comic-books" style="width: 18rem;">
-  <img src="${cart.img}" class="display-img" alt="comicbook image">
+  <img src="${cart.image}" class="display-img" alt="comicbook image">
   <div class="card-body">
    <h2 class="heading-name">${cart.name}</h2>
       <h3 class="cat-col">${cart.category}</h3>
