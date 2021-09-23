@@ -14,7 +14,7 @@ function renderCart(cart) {
       <h3 class="card-text">${cart.description}</h3>
       <h4>${cart.price}</h4>
   </div>
-</div>
+ </div>
 }
 
 console.log(cart)
