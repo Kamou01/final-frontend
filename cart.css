@@ -67,3 +67,8 @@ p {
   font-family: "Teko", sans-serif;
   text-align: center;
 }
+
+#cart-items {
+  display: flex;
+  margin: 5%;
+}
