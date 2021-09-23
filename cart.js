@@ -8,7 +8,7 @@ let container = document.querySelector("#cart-items");
 function renderCart(cart) {
     return `       <div class="comic-books">
     <img
-      src="./images/7 Essential Black Panther Comics That Shaped the Wakandan Warrior (1).jpeg"
+      src="${cart.image}"
       alt="pic"
     />
     <h1>${cart.name}</h1>
