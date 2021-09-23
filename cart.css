@@ -72,3 +72,11 @@ p {
   display: flex;
   margin: 5%;
 }
+
+.display-img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 79%;
+}
