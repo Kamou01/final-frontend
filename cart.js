@@ -13,6 +13,7 @@ function renderCart(cart) {
       <h3 class="cat-col" style="color: aqua;">${cart.category}</h3>
       <h3 class="card-text">${cart.description}</h3>
       <h4>${cart.price}</h4>
+      <button class="remove-btn" onclick="removeFromCart(${cart.id})">Remove from Cart</button>
    </div>
   </div>`
 }
