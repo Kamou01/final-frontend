@@ -18,7 +18,7 @@ function fetch_comics() {
 
 
 function renderBook(book) {
-    return `       <div class="comic-books" style="width: 18rem;">
+    return `       <div class="cart-items" style="width: 18rem;">
     <img src="${book.image}" class="display-img" alt="comic book image">
     <div class="card-body">
       <h2 class="heading-name">${book.name}</h2>
